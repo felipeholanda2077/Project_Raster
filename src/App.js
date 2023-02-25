@@ -73,7 +73,7 @@ function App() {
       <footer className="fixed-bottom">
         <p>
           Feito por <span></span>Felipe Holanda{" - "}
-          <a href="#">
+          <a href="https://github.com/felipeholanda2077/Project_Raster">
             <strong>Project Raster</strong>
           </a>
         </p>
