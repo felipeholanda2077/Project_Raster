@@ -29,48 +29,59 @@ function App() {
           )
         }
       },
-    (err) => {
-      console.log('ERRO: ', err);
+        (err) => {
+          console.log('ERRO: ', err);
 
-      Swal.fire({
-        icon: 'error',
-        title: 'Erro ao Buscar o pedido!',
-        text: 'Tente novamente mais tarde!',
-        footer: '<a href="">Por que eu tenho esse problema?</a>'
-      }
-      )
-    });
+          Swal.fire({
+            icon: 'error',
+            title: 'Erro ao Buscar o pedido!',
+            text: 'Tente novamente mais tarde!',
+            footer: '<a href="">Por que eu tenho esse problema?</a>'
+          }
+          )
+        });
   };
 
-    return (
-      <div className="App">
-        <div className="container">
-          <img src={Logo} alt="Logo" />
-          <h1>Project Raster</h1>
-          <p>Verifique sua encomenda a seguir</p>
-          <form onSubmit={submitHanlder}>
-            <div className="form-group">
-              <input type="text" placeholder="AA123456789BR ou 000.111.222-33" className="form-control" name="tracking" />
-            </div>
-            <button type="submit" className="btn btn-primary">
+  return (
+    <div className="App">
+      <div className="container">
+        <img src={Logo} alt="Logo" className="w-25" />
+
+        <h1>Project Raster</h1>
+        <p>Verifique sua encomenda a seguir</p>
+        <form onSubmit={submitHanlder}>
+          <div className="form-group">
+            <input type="text" placeholder="AA123456789BR ou 000.111.222-33" className="form-control" name="tracking" />
+          </div>
+
+          <div class="wrap p-5">
+            <button type="submit" className="buttonv">
               Verificar
             </button>
-          </form>
+          </div>
 
-          <TrackingResult data={data} />
+        </form>
+        <br></br>
+        <div className="card pt-5">
+          <div class="card-body">
+            <TrackingResult data={data} />
+          </div>
         </div>
-        <footer>
-          <p>
-            Feito por <span role="img"></span>Felipe Holanda{" - "}
-            <a href="#">
-              <strong>Project Raster</strong>
-            </a>
-          </p>
-        </footer>
+
       </div>
-    );
 
-  }
+      <footer className="fixed-bottom">
+        <p>
+          Feito por <span></span>Felipe Holanda{" - "}
+          <a href="#">
+            <strong>Project Raster</strong>
+          </a>
+        </p>
+      </footer>
+    </div >
+  );
+
+}
 
 
-  export default App;
+export default App;
