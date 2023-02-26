@@ -41,3 +41,15 @@
     -->
   </body>
 </html>
+
+
+<script>
+  window.addEventListener('orientationchange', function(){     // funciona com addEventListener('resize', ...) também!
+      if(window.innerHeight > window.innerWidth) document.getElementById('wrapper').className = 'retrato';
+      else document.getElementById('wrapper').className = 'paisagem';
+  });
+
+  window.addEventListener('load', function(){
+      document.getElementById('wrapper').className = 'retrato';
+  });
+</script>
