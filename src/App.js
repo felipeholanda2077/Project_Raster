@@ -63,7 +63,7 @@ function App() {
 
           <img src={Logo} alt="Logo" className="w-25 rounded-circle" />
 
-          <h1 className="text-white">Project Raster</h1>
+          <h1 className="text-white">RASTREAMENTO DE PEDIDOS</h1>
           <p className="text-white">Verifique sua encomenda a seguir</p>
           <form onSubmit={submitHanlder}>
             <p>
