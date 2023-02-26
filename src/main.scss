@@ -5,6 +5,144 @@
   width: 100%;
 }
 
+body {
+	text-align: center;
+	
+	align-items: center;
+	
+}
+
+html, body {
+	height:100%;
+}
+
+.input {
+  z-index: 10;
+  position: relative;
+  padding: auto;
+	position:relative;
+	font-size: 1.5em;
+	background: linear-gradient(21deg, #10abff, #1beabd);
+	padding: 6px;
+	display: inline-block;
+  width: 60%;
+	border-radius: 9999em;
+  padding-bottom: 7px;
+
+
+*:not(span) {
+  position: relative;
+  display: inherit;
+  border-radius: inherit;
+  margin: 0;
+  border: none;
+  outline: none;
+  padding: 0 .325em;
+  z-index: 1; // needs to be above the :focus span
+  
+  // summon fancy shadow styles when focussed
+  &:focus + span {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+	// we don't animate box-shadow directly as that can't be done on the GPU, only animate opacity and transform for high performance animations.
+	span {
+		
+		transform: scale(.993, .94); // scale it down just a little bit
+		transition: transform .5s, opacity .25s;
+		opacity: 0; // is hidden by default
+		
+		position:absolute;
+		z-index: 0; // needs to be below the field (would block input otherwise)
+		margin:4px; // a bit bigger than .input padding, this prevents background color pixels shining through
+		left:0;
+		top:0;
+		right:0;
+		bottom:0;
+		border-radius: inherit;
+		pointer-events: none; // this allows the user to click through this element, as the shadow is rather wide it might overlap with other fields and we don't want to block those.
+		
+		// fancy shadow styles
+		box-shadow: inset 0 0 0 3px #fff,
+			0 0 0 4px #fff,
+			3px -3px 30px #1beabd, 
+			-3px 3px 30px #10abff;
+	}
+	
+}
+
+input {
+	font-family: inherit;
+	line-height:inherit;
+	color:#2e3750;
+	min-width:12em;
+}
+
+::placeholder {
+	color:#cbd0d5;
+}
+
+html::after {
+	content:'';
+	background: linear-gradient(21deg, #10abff, #1beabd);
+	height:3px;
+	width:100%;
+	position:absolute;
+	left:0;
+	top:0;
+}
+
+// CSS do BackGround
+
+.backgroundrect {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0, #120c56, #000000);
+  justify-Content: "center";
+  align-items: "center";
+}
+
+.waves {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.wave1 {
+  animation: movewave1 3s ease-in-out infinite alternate;
+}
+
+@keyframes movewave1 {
+  from {
+    transform: translateX(-200px);  
+  }
+}
+
+.wave2 {
+  animation: movewave2 3s 1.2s ease-in-out infinite alternate;
+}
+
+@keyframes movewave2 {
+  from {
+    transform: translateX(200px);  
+  }
+}
+
+.wave3 {
+  animation: movewave3 3s 0.7s ease-in-out infinite alternate;
+}
+
+@keyframes movewave3 {
+  from {
+    transform: translateX(-100px);  
+  }
+}
+
+// CSS do Logo
 .wrap {
   height: 100%;
   display: flex;
