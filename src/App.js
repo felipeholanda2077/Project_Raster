@@ -25,8 +25,8 @@ function App() {
       .then(result => {
         if (result.message === "OK") {
           setData(result.data);
-          
-          
+
+
 
 
           Swal.fire(
@@ -35,10 +35,10 @@ function App() {
             'success'
           )
         }
-        
+
       },
         (err) => {
-          
+
           console.log('ERRO: ', err);
 
           Swal.fire({
@@ -47,19 +47,15 @@ function App() {
             text: 'Tente novamente mais tarde!',
             footer: '<a href="">Por que eu tenho esse problema?</a>'
           }
-         
           )
-          
         }
-        
-        
-        );
-        function setValor1(){
-          setValor('');
-      }
-      setTimeout(setValor1, 1000*3);
+      );
+    function setValor1() {
+      setValor('');
+    }
+    setTimeout(setValor1, 1000 * 3);
   };
-  
+
 
   return (
 
@@ -85,7 +81,7 @@ function App() {
           <form onSubmit={submitHanlder}>
             <p>
               <span className="form-group" class="input">
-                <input type="text" onChange={(e) => setValor(e.target.value)} value={valor} placeholder="AA123456789BR ou 000.111.222-33" className="form-control" name="tracking" required/>
+                <input type="text" onChange={(e) => setValor(e.target.value)} value={valor} placeholder="AA123456789BR ou 000.111.222-33" className="form-control" name="tracking" required />
               </span>
             </p>
 
@@ -106,7 +102,7 @@ function App() {
           </div>
         </div>
 
-        
+
 
 
 
