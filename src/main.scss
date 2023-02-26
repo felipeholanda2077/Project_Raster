@@ -169,6 +169,7 @@ background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 10
   outline: none;
   position: relative;
   padding: 10px;
+  z-index: 2;
   }
 
 .buttonv::before {
@@ -184,15 +185,18 @@ content: '';
   transform: translate(-50%, -50%);
   opacity: 0;
   transition: all .3s ease-in-out 0s;
+  z-index: 2;
 }
 
 .buttonv:hover, .button:focus {
   color: #313133;
   transform: translateY(-6px);
+  z-index: 2;
 }
 
 .buttonv:hover::before, button:focus::before {
   opacity: 1;
+  z-index: 2;
 }
 
 .buttonv::after {
@@ -206,6 +210,7 @@ content: '';
   left: 50%;
   transform: translate(-50%, -50%);
   animation: ring 1.5s infinite;
+  z-index: 2;
 }
 
 button:hover::after, button:focus::after {
