@@ -9,8 +9,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Logo from "./img/Raster.png";
 import Swal from 'sweetalert2'
 
+
 function App() {
   const [data, setData] = useState([]);
+  const [valor, setValor] = React.useState('');
 
   const submitHanlder = event => {
     event.preventDefault();
@@ -23,6 +25,9 @@ function App() {
       .then(result => {
         if (result.message === "OK") {
           setData(result.data);
+          
+          
+
 
           Swal.fire(
             'Pedido Verificado com Sucesso!',
@@ -30,8 +35,10 @@ function App() {
             'success'
           )
         }
+        
       },
         (err) => {
+          
           console.log('ERRO: ', err);
 
           Swal.fire({
@@ -40,9 +47,19 @@ function App() {
             text: 'Tente novamente mais tarde!',
             footer: '<a href="">Por que eu tenho esse problema?</a>'
           }
+         
           )
-        });
+          
+        }
+        
+        
+        );
+        function setValor1(){
+          setValor('');
+      }
+      setTimeout(setValor1, 1000*3);
   };
+  
 
   return (
 
@@ -68,7 +85,7 @@ function App() {
           <form onSubmit={submitHanlder}>
             <p>
               <span className="form-group" class="input">
-                <input type="text" placeholder="AA123456789BR ou 000.111.222-33" className="form-control" name="tracking" required/>
+                <input type="text" onChange={(e) => setValor(e.target.value)} value={valor} placeholder="AA123456789BR ou 000.111.222-33" className="form-control" name="tracking" required/>
               </span>
             </p>
 
@@ -108,6 +125,5 @@ function App() {
   );
 
 }
-
 
 export default App;
