@@ -183,6 +183,7 @@ html::after {
   justify-content: center;
 }
 
+//BUTTON CSS
 .buttonv {
   min-width: 300px;
   min-height: 60px;
@@ -192,8 +193,8 @@ html::after {
   letter-spacing: 1.3px;
   font-weight: 700;
   color: #313133;
-  background: #4FD1C5;
-background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
+  background: #12B8F1;
+  background: linear-gradient(90deg, rgba(120,230,217,1) 0%, rgba(79,209,197,1) 100%);
   border: none;
   border-radius: 1000px;
   box-shadow: 12px 12px 24px rgba(79,209,197,.64);
@@ -271,6 +272,7 @@ main.cards {
   padding: 32px;
   flex-wrap: wrap;
   justify-content: center;
+
 }
 
 main.cards section.card {
@@ -288,6 +290,19 @@ main.cards section.card {
 main.cards section.card:first-child {
   margin-left: 0;
 }
+//LEMBRARE DE MUDAR AQUI
+
+  .card:hover, .card:focus {
+    color: #313133;
+    transform: translateY(-10px) scale(1.1);
+    box-shadow: 10px 10px 32px rgb(0, 0, 0);
+    transition-duration: 3s;
+    transition-property: width;
+    z-index: 999;
+    transition: all 0.10s;
+    transition-timing-function: linear;
+  }
+
 
 main.cards section.card .icon {
   width: 64px;
