@@ -6,10 +6,13 @@ import "./App.css";
 import TrackingResult from "./components/TrackingResult";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+
 import Logo from "./img/Raster.png";
 import Bag from "./img/Bag.png";
 import Chat from "./img/Chat.png";
 import Play from "./img/Play.png";
+
+import Brasil from "./countries/brasil.png";
 
 import Swal from 'sweetalert2'
 
@@ -68,19 +71,23 @@ function App() {
 
         <div className="row-sm">
           <div className="col-sm">
-            <i class="fa-solid fa-bars"><button type="button" class="btn btn-outline-light mt-5 float-left">Sidebar</button></i>
+
+            <button type="button" class="btn btn-outline-light mt-5 float-left"><i class="fa-solid fa-bars" /></button>
+
           </div>
 
+
           <div className="col-sm">
-           </div>
+          </div>
 
 
           <div className="col-sm">
 
             <div class="dropdown float-right mt-5">
               <button class="btn btn-outline-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Paises
+                <img src={Brasil} alt="Brasil" />
               </button>
+
               <ul class="dropdown-menu dropdown-menu-dark">
                 <li><a class="dropdown-item active" href="#">Action</a></li>
                 <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -202,5 +209,7 @@ function App() {
   );
 
 }
+
+<script src="https://kit.fontawesome.com/63c64f64f0.js" crossorigin="anonymous"></script>
 
 export default App;
