@@ -7,6 +7,10 @@ import TrackingResult from "./components/TrackingResult";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import Logo from "./img/Raster.png";
+import Bag from "./img/Bag.png";
+import Chat from "./img/Chat.png";
+import Play from "./img/Play.png";
+
 import Swal from 'sweetalert2'
 
 
@@ -61,6 +65,7 @@ function App() {
 
     <div className="backgroundrect position-absolute">
       <header>
+      <i class="fa-solid fa-bars"><button type="button" class="btn btn-primary"></button></i>
 
         <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path class="wave1" fill="#43818A" fill-opacity="1" d="M0,96L30,117.3C60,139,120,181,180,213.3C240,245,300,267,360,240C420,213,480,139,540,122.7C600,107,660,149,720,170.7C780,192,840,192,900,176C960,160,1020,128,1080,112C1140,96,1200,96,1260,128C1320,160,1380,224,1410,256L1440,288L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path>
           <path class="wave2" fill="#57A7B3" fill-opacity="1" d="M0,288L30,266.7C60,245,120,203,180,181.3C240,160,300,160,360,165.3C420,171,480,181,540,170.7C600,160,660,128,720,112C780,96,840,96,900,96C960,96,1020,96,1080,128C1140,160,1200,224,1260,250.7C1320,277,1380,267,1410,261.3L1440,256L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path>
@@ -100,23 +105,67 @@ function App() {
               <TrackingResult data={data} />
             </div>
           </div>
-        </div>
 
 
-
-
-
-
-        <div className="fixed-bottom">
-          <p className="align-middle">
-            Feito por <span></span>Felipe Holanda{" - "}
-            <a href="https://github.com/felipeholanda2077/Project_Raster">
-              <strong>Project Raster</strong>
-            </a>
-          </p>
         </div>
       </div>
+
+
+
+
+
+      <main className="background-waves cards d-flex justify-content-center" class="cards background-waves">
+
+        <section class="card contact ">
+          <div class="icon">
+            <img src={Bag} alt="Contact us." />
+          </div>
+          <h3>Veja Suas Compras</h3>
+          <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+          <button>Learn More</button>
+        </section>
+        <section class="card shop">
+          <div class="icon">
+            <img src={Chat} alt="Shop here." />
+          </div>
+          <h3>Suporte 24 Horas</h3>
+          <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+          <button>Learn More</button>
+        </section>
+        <section class="card about">
+          <div class="icon">
+            <img src={Play} alt="About us." />
+          </div>
+          <h3>Sobre nós</h3>
+          <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+          <button>Learn More</button>
+        </section>
+
+
+
+
+
+
+
+
+      </main>
+
+      <footer id="rodape" className="d-flex justify-content-center bg-dark">
+        <p className="align-middle text-white">
+          Feito por <span></span>Felipe Holanda{" - "}
+          <a href="https://github.com/felipeholanda2077/Project_Raster">
+            <strong>Project Raster</strong>
+          </a>
+        </p>
+      </footer>
     </div>
+
+
+
+
+
+
+
 
   );
 
