@@ -153,24 +153,24 @@ function App() {
             <img src={Bag} alt="Contact us." />
           </div>
           <h3>Veja Suas Compras</h3>
-          <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-          <button>Learn More</button>
+          <span>Com o nosso sistema de rastreamento você tem tudo na palma de sua mão, a qualquer momento no momento que desejar.</span>
+          <button href="#">Rastreamento</button>
         </section>
         <section class="card shop">
           <div class="icon">
             <img src={Chat} alt="Shop here." />
           </div>
           <h3>Suporte 24 Horas</h3>
-          <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-          <button>Learn More</button>
+          <span>Trabalhamos com suporte de atendimento via e-mail 24 horas por dia, de segunda a sexta-feira.</span>
+          <button href="#">Atendimento</button>
         </section>
         <section class="card about">
           <div class="icon">
             <img src={Play} alt="About us." />
           </div>
           <h3>Sobre nós</h3>
-          <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-          <button>Learn More</button>
+          <span>Saiba mais a fundo como nós iniciamos e como é o nosso andamento no mercado de rastreamento de encomendas internacionais.</span>
+          <button href="#">Saiba Mais</button>
         </section>
 
 
