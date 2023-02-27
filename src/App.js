@@ -74,10 +74,10 @@ function App() {
 
         <div className="container">
 
-          <img src={Logo} alt="Logo" className="w-25 rounded-circle" />
+          <img src={Logo} class="Logigs" alt="Logo" className="w-25 rounded-circle" />
 
-          <h1 className="text-white">RASTREAMENTO DE PEDIDOS</h1>
-          <p className="text-white">Verifique sua encomenda a seguir</p>
+          <h1 className="text-white titi" >RASTREAMENTO DE PEDIDOS</h1>
+          <p className="text-white titi">Verifique sua encomenda a seguir</p>
           <form onSubmit={submitHanlder}>
             <p>
               <span className="form-group" class="input">
