@@ -17,6 +17,12 @@ html, body {
   background-color: #66C3D2;
 }
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+  z-index: 100;
+}
+
 // main logo home page
 .Logigs {
   z-index: 10;
@@ -259,10 +265,12 @@ button:hover::after, button:focus::after {
 }
 
 
-
+//Cards Home Page CSS
 main.cards {
   display: flex;
   padding: 32px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 main.cards section.card {
