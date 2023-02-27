@@ -125,7 +125,7 @@ function App() {
           <form onSubmit={submitHanlder}>
             <p>
               <span className="form-group" class="input">
-                <input type="text" onChange={(e) => setValor(e.target.value)} value={valor} placeholder="AA123456789BR ou 000.111.222-33" className="form-control" name="tracking" required />
+                <input type="text" onChange={(e) => setValor(e.target.value)} value={valor} placeholder="⠀AA123456789BR ou 000.111.222-33" className="form-control" name="tracking" required />
               </span>
             </p>
 
