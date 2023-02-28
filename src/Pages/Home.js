@@ -14,7 +14,7 @@ import About from "../img/Play.png";
 
 import Phones from "../img/Phone.png";
 
-import Brasil from "../countries/brasil.png";
+
 
 import Appstore from "../img/Appstore.svg";
 import Googleplay from "../img/Googleplay.svg";
@@ -104,9 +104,7 @@ const Home = () => {
                         <div className="col-sm">
 
                             <div class="dropdown float-right mt-5">
-                                <button class="btn btn-outline-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <img src={Brasil} alt="Brasil" />
-                                </button>
+                                
 
                                 <ul class="dropdown-menu dropdown-menu-dark">
                                     <li><a class="dropdown-item active" href="#">Action</a></li>
