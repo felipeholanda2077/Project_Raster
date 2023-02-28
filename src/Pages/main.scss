@@ -441,3 +441,11 @@ main.cards section.card.about {
 .bg-foo {
   background-color: #111111;
 }
+
+.whatsapp {
+  position: fixed;
+  top: 82%;
+  right: 1%;
+  padding: 10px;
+  z-index: 10000000;
+}

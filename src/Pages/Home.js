@@ -1,3 +1,6 @@
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable react/style-prop-object */
+/* eslint-disable react/jsx-no-target-blank */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable no-undef */
 import React, { useState } from "react";
@@ -104,7 +107,7 @@ const Home = () => {
                         <div className="col-sm">
 
                             <div class="dropdown float-right mt-5">
-                                
+
 
                                 <ul class="dropdown-menu dropdown-menu-dark">
                                     <li><a class="dropdown-item active" href="#">Action</a></li>
@@ -214,6 +217,19 @@ const Home = () => {
             </main>
 
 
+            <div className="container">
+                <div className="row align-items-center">
+                    <div className="col-12 col-md-6">
+                        <img src={Phones} class="Phones" alt="Phones" />
+                    </div>
+                    <div className="col-12 col-md-5">
+                        <h1 className="texPho" >Voce muda<br></br>Para o super App</h1>
+                        <h6 className="text-white Robot">Quem tem conta no Raster tem soluções completas para todos os momentos em seus rastreamentos.</h6>
+                    </div>
+                </div>
+            </div>
+
+
 
 
 
@@ -296,6 +312,10 @@ const Home = () => {
 
                 </div>
 
+                <a href="https://api.whatsapp.com/send?phone=5511978381907"
+                    target="_blank">
+                    <img class="whatsapp" src="https://assets.boxloja.pro/shop/img/whatsapp.png" />
+                </a>
 
 
                 <div class="text-center p-3">
