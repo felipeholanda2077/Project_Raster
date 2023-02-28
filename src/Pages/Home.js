@@ -216,7 +216,7 @@ const Home = () => {
             </main>
 
 
-            
+
 
 
             <footer class="bg-dark text-white text-center text-lg-start">
@@ -253,10 +253,10 @@ const Home = () => {
 
                             <ul class="list-unstyled mb-0">
                                 <li className="text-left">
-                                    <a href="#!" class="text-white text-left text-decoration-none">Trabalhe Conosco</a>
+                                    <i class="fa-solid fa-user-doctor"></i> <a href="#!" class="text-white text-left text-decoration-none">Trabalhe Conosco</a>
                                 </li>
                                 <li className="text-left">
-                                    <a href="#!" class="text-white text-left text-decoration-none">Entre em Contato</a>
+                                    <i class="fa-solid fa-phone"></i> <a href="#!" class="text-white text-left text-decoration-none">Entre em Contato</a>
                                 </li>
 
                                 <div className="pt-2" style={{ borderTop: "2px solid #fff ", marginLeft: 10, marginRight: 10, marginTop: 30 }}></div>
@@ -264,16 +264,16 @@ const Home = () => {
                                 <h5 class="text-uppercase pt-3 text-left">Políticas</h5>
 
                                 <li className="text-left">
-                                    <a href="#!" class="text-white text-left text-decoration-none">Contrato Raster</a>
+                                    <i class="fa-solid fa-file-contract"></i> <a href="#!" class="text-white text-left text-decoration-none">Contrato Raster</a>
                                 </li>
                                 <li className="text-left">
-                                    <a href="#!" class="text-white text-left text-decoration-none">Política de Privacidade</a>
+                                    <a href="#!" class="text-white text-left text-decoration-none d-block">Política de Privacidade</a>
                                 </li>
                                 <li className="text-left">
-                                    <a href="#!" class="text-white text-left text-decoration-none">Licensa MIT</a>
+                                    <i class="fa-solid fa-computer"></i> <a href="#!" class="text-white text-left text-decoration-none">Licensa MIT</a>
                                 </li>
                                 <li className="text-left">
-                                    <a href="#!" class="text-white text-left text-decoration-none">Política de Cookies</a>
+                                    <i class="fa-solid fa-cookie-bite"></i> <a href="#!" class="text-white text-left text-decoration-none">Política de Cookies</a>
                                 </li>
                             </ul>
                         </div>
