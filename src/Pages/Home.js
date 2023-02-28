@@ -84,38 +84,38 @@ const Home = () => {
 
             <header>
                 <div className="container">
-                <div className="row-sm">
-                    <div className="col-sm">
+                    <div className="row-sm">
+                        <div className="col-sm">
 
-                        <button type="button" class="float-left btn btn-outline-light mt-5"><i class="fa-solid fa-bars" /></button>
-                    </div>
-
-
-
-
-                    <div className="col-sm">
-
-                    </div>
-
-
-                    <div className="col-sm">
-
-                        <div class="dropdown float-right mt-5">
-                            <button class="btn btn-outline-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <img src={Brasil} alt="Brasil" />
-                            </button>
-
-                            <ul class="dropdown-menu dropdown-menu-dark">
-                                <li><a class="dropdown-item active" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-
-                                <li><a class="dropdown-item" href="#">Separated link</a></li>
-                            </ul>
+                            <button type="button" class="float-left btn btn-outline-light mt-5"><i class="fa-solid fa-bars" /></button>
                         </div>
 
+
+
+
+                        <div className="col-sm">
+
+                        </div>
+
+
+                        <div className="col-sm">
+
+                            <div class="dropdown float-right mt-5">
+                                <button class="btn btn-outline-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src={Brasil} alt="Brasil" />
+                                </button>
+
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item active" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+
+                                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
                     </div>
-                </div>
                 </div>
 
                 <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path class="wave1" fill="#43818A" fill-opacity="1" d="M0,96L30,117.3C60,139,120,181,180,213.3C240,245,300,267,360,240C420,213,480,139,540,122.7C600,107,660,149,720,170.7C780,192,840,192,900,176C960,160,1020,128,1080,112C1140,96,1200,96,1260,128C1320,160,1380,224,1410,256L1440,288L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path>
@@ -198,7 +198,7 @@ const Home = () => {
                     <div className="col-11 pl-5 col-md-8">
                         <h1 className="texPho" >ESTAMOS CONSTRUINDO<br></br>A AGILIDADE</h1>
                         <h6 className="text-white Robot">A revolução em rastreamento de suas encomendas<br></br>que chegou para melhorar a sua maneira de ver suas encomendas!<br></br>
-                        A sua disposição em sua casa ou aonde voce estiver</h6>
+                            A sua disposição em sua casa ou aonde voce estiver</h6>
                     </div>
                     <div className="col-12 col-md-4">
 
@@ -208,23 +208,35 @@ const Home = () => {
 
                     </div>
 
-                    </div>
-
-
                 </div>
 
-                <footer id="rodape" className="d-flex justify-content-center bg-transparent">
-                    <p className="align-middle text-white">
-                        Feito por <span></span>Felipe Holanda{" - "}
-                        <a href="https://github.com/felipeholanda2077/Project_Raster">
-                            <strong>Project Raster</strong>
-                        </a>
-                    </p>
-                </footer>
-            </div >
 
-            );
+            </div>
+
+            <h3 className="d-flex p-2 justify-content-center" class="texFoo">A revolução já começou! Antecipe-se e saia na frente com os melhores rastreamentos</h3>
+
+            <footer id="rodape" className="d-flex justify-content-center bg-transparent">
+
+
+
+
+                <div class="text-center p-3 bgfor">
+                © 2023 | ∞ Criado por <span></span>Felipe Holanda{" - "}
+                    <a class="text-dark" href="https://mdbootstrap.com/">
+                        <strong>Project Raster</strong>
+                    </a>
+                </div>
+                <p className="align-middle text-white">
+                    © 2023 | ∞ Criado por <span></span>Felipe Holanda{" - "}
+                    <a href="https://github.com/felipeholanda2077/Project_Raster">
+                        <strong>Project Raster</strong>
+                    </a>
+                </p>
+            </footer>
+        </div >
+
+    );
 
 }
 
-            export default Home;
+export default Home;
