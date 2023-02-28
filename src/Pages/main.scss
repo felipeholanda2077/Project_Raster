@@ -1,9 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
 @import 'node_modules/bootstrap/scss/bootstrap.scss';
 
 .list-group-item span {
   display: block;
   width: 100%;
+}
+
+//Fontes CSS
+.Robot {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5em;
+  font-weight: 300;
+  color: #000000;
+  text-align: start;
 }
 
 body {
@@ -308,6 +319,7 @@ main.cards section.card:first-child {
     z-index: 999;
     transition: all 0.10s;
     transition-timing-function: linear;
+    filter: drop-shadow(10px 4px 4px rgba(0, 0, 0, 0.50));
   }
 
 
@@ -382,4 +394,33 @@ main.cards section.card.about {
       font-size: 70%;
   }
 
+}
+
+.texPho {
+  font-family: 'Caveat', cursive;
+  font-size: 60px;
+  color: #fff;
+  text-shadow: 0 0 10px #000;
+  margin-top: 20px;
+  text-align: left;
+}
+// Phones CSS
+.Phones {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-self: center;
+  justify-content: flex-start;
+  filter: drop-shadow(10px 4px 4px rgba(0, 0, 0, 0.50));
+  border-radius: 8px;
+  max-height: 1000px;
+  max-width: 380px;
+  animation: Phone1 2s 1.2s ease-in-out infinite alternate;
+}
+
+@keyframes Phone1 {
+  from {
+    transform: translateY(20px);  
+  }
 }
