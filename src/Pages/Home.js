@@ -10,14 +10,11 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Logo from "../img/Raster.png";
 import Bag from "../img/Bag.png";
 import Chat from "../img/Chat.png";
-import Play from "../img/Play.png";
+import About from "../img/About.png";
 
 import Phones from "../img/Phone.png";
 
 import Brasil from "../countries/brasil.png";
-
-import { faAppStore } from "@fortawesome/free-brands-svg-icons";
-import { faGooglePlay } from "@fortawesome/free-brands-svg-icons";
 
 import Appstore from "../img/Appstore.svg";
 import Googleplay from "../img/Googleplay.svg";
@@ -167,35 +164,6 @@ const Home = () => {
                 </div>
             </div>
 
-            <main className="cards" class="cards">
-
-                <section class="card contact ">
-                    <div class="icon">
-                        <img src={Bag} alt="Contact us." />
-                    </div>
-                    <h3>Veja Suas Compras</h3>
-                    <span>Com o nosso sistema de rastreamento você tem tudo na palma de sua mão, a qualquer momento no momento que desejar.</span>
-                    <button>Rastreamento</button>
-                </section>
-                <section class="card shop">
-                    <div class="icon">
-                        <img src={Chat} alt="Shop here." />
-                    </div>
-                    <h3>Suporte 24 Horas</h3>
-                    <span>Trabalhamos com suporte de atendimento via e-mail 24 horas por dia, de segunda a sexta-feira.</span>
-                    <button href="#">Atendimento</button>
-                </section>
-                <section class="card about">
-                    <div class="icon">
-                        <img src={Play} alt="About us." />
-                    </div>
-                    <h3>Sobre nós</h3>
-                    <span>Saiba mais a fundo como nós iniciamos e como é o nosso andamento no mercado de rastreamento de encomendas internacionais.</span>
-                    <button href="#">Saiba Mais</button>
-                </section>
-
-
-            </main>
 
 
             <div className="container ">
@@ -216,6 +184,39 @@ const Home = () => {
 
 
             </div>
+
+            <main className="cards" class="cards">
+
+                <section class="card contact ">
+                    <div class="icon">
+                        <img src={Bag} alt="Contact us." />
+                    </div>
+                    <h3>Veja Suas Compras - Mapa Mundi</h3>
+                    <span>Com o nosso sistema de rastreamento você tem tudo na palma de sua mão, a qualquer momento no momento que desejar.</span>
+                    <button>Rastreamento</button>
+                </section>
+                <section class="card shop">
+                    <div class="icon">
+                        <img src={Chat} alt="Shop here." />
+                    </div>
+                    <h3>Suporte 24 Horas</h3>
+                    <span>Trabalhamos com suporte de atendimento via e-mail 24 horas por dia, de segunda a sexta-feira.</span>
+                    <button href="#">Atendimento</button>
+                </section>
+                <section class="card about">
+                    <div class="icon">
+                        <img src={About} alt="About us." />
+                    </div>
+                    <h3>Sobre nós</h3>
+                    <span>Saiba mais a fundo como nós iniciamos e como é o nosso andamento no mercado de rastreamento de encomendas internacionais.</span>
+                    <button href="#">Saiba Mais</button>
+                </section>
+
+
+            </main>
+
+
+            
 
 
             <footer class="bg-dark text-white text-center text-lg-start">
