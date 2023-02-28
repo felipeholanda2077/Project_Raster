@@ -27,9 +27,17 @@ function App() {
   const [data, setData] = useState([]);
   const [valor, setValor] = React.useState('');
 
-
-
-
+  function open() {
+    document.getElementById("main").style.marginLeft = "25%";
+    document.getElementById("mySidebar").style.width = "25%";
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("openNav").style.display = 'none';
+  }
+  function close() {
+    document.getElementById("main").style.marginLeft = "0%";
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("openNav").style.display = "inline-block";
+  }
 
   const submitHanlder = event => {
     event.preventDefault();
@@ -42,9 +50,6 @@ function App() {
       .then(result => {
         if (result.message === "OK") {
           setData(result.data);
-
-
-
 
           Swal.fire(
             'Pedido Verificado com Sucesso!',
@@ -83,17 +88,12 @@ function App() {
 
       <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" className="d-none" id="mySidebar">
         <img src={Raster} alt="Logo" className="img-fluid" />
-        <button type="button" onClick={w3_close} class="btn btn-lg float-right" id="closeNav"><i class="fa-solid fa-xmark" ></i></button>
+        <button type="button" onClick={() => close()} class="btn btn-lg float-right" id="closeNav"><i class="fa-solid fa-xmark" ></i></button>
         <a href="#" class=" w3-bar-item btn  btn-lg btn-block my-5"><i class="fa-solid fa-house fa-lg"></i><strong> Home </strong><i class="fa-solid fa-arrow-right float-right mt-1"></i></a>
         <a href="#" class=" w3-bar-item btn  btn-lg btn-block  my-5 "><i class="fa-solid fa-map fa-lg "></i><strong> Mapa Mundi </strong><i class="fa-solid fa-arrow-right float-right mt-1"></i></a>
         <a href="#" class=" w3-bar-item btn  btn-lg btn-block my-5"><i class="fa-solid fa-user-tie fa-lg "></i><strong> Sobre Nós </strong><i class="fa-solid fa-arrow-right float-right mt-1"></i></a>
         <a href="#" class=" w3-bar-item btn  btn-lg btn-block my-5"><i class="fa-solid fa-right-to-bracket fa-lg"></i><strong> Login </strong><i class="fa-solid fa-arrow-right float-right mt-1"></i></a>
-          
-
-
-
         
-
 
       </div>
 
@@ -106,7 +106,7 @@ function App() {
         <div className="row-sm">
           <div className="col-sm">
 
-            <button type="button" class="btn btn-outline-light mt-5" onClick={w3_open}><i class="fa-solid fa-bars" /></button>
+            <button type="button" class="float-left btn btn-outline-light mt-5" onClick={() => open()}><i class="fa-solid fa-bars" /></button>
           </div>
 
 
@@ -209,7 +209,7 @@ function App() {
 
       </main>
 
-      <footer id="rodape" className="d-flex justify-content-center bg-dark">
+      <footer id="rodape" className="d-flex justify-content-center bg-transparent">
         <p className="align-middle text-white">
           Feito por <span></span>Felipe Holanda{" - "}
           <a href="https://github.com/felipeholanda2077/Project_Raster">
