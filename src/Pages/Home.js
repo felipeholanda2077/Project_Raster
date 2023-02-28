@@ -10,7 +10,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Logo from "../img/Raster.png";
 import Bag from "../img/Bag.png";
 import Chat from "../img/Chat.png";
-import About from "../img/About.png";
+import About from "../img/Play.png";
 
 import Phones from "../img/Phone.png";
 
@@ -253,27 +253,27 @@ const Home = () => {
 
                             <ul class="list-unstyled mb-0">
                                 <li className="text-left">
-                                    <a href="#!" class="text-white text-left" className="lin">Trabalhe Conosco</a>
+                                    <a href="#!" class="text-white text-left lin" className="lin">Trabalhe Conosco</a>
                                 </li>
                                 <li className="text-left">
-                                    <a href="#!" class="text-white text-left" className="lin">Entre em Contato</a>
+                                    <a href="#!" class="text-white text-left lin" className="lin">Entre em Contato</a>
                                 </li>
 
                                 <div className="pt-2" style={{ borderTop: "2px solid #fff ", marginLeft: 10, marginRight: 10, marginTop: 30 }}></div>
 
-                                <h5 class="text-uppercase pt-3 text-left" className="lin">Políticas</h5>
+                                <h5 class="text-uppercase pt-3 text-left lin" className="lin">Políticas</h5>
 
                                 <li className="text-left">
-                                    <a href="#!" class="text-white text-left" className="lin">Contrato Raster</a>
+                                    <a href="#!" class="text-white text-left lin" className="lin">Contrato Raster</a>
                                 </li>
                                 <li className="text-left">
-                                    <a href="#!" class="text-white text-left" className="lin">Política de Privacidade</a>
+                                    <a href="#!" class="text-white text-left lin" className="lin">Política de Privacidade</a>
                                 </li>
                                 <li className="text-left">
-                                    <a href="#!" class="text-white" className="lin">Licensa MIT</a>
+                                    <a href="#!" class="text-white lin" className="lin">Licensa MIT</a>
                                 </li>
                                 <li className="text-left">
-                                    <a href="#!" class="text-white" className="lin">Política de Cookies</a>
+                                    <a href="#!" class="text-white lin" className="lin">Política de Cookies</a>
                                 </li>
                             </ul>
                         </div>
@@ -301,7 +301,7 @@ const Home = () => {
 
 
                 <div class="text-center p-3">
-                    © 2023 | ∞ Criado por <span></span>Felipe Holanda{" - "}
+                    © 2023 | ∞ Desenvolvido por <span></span>Felipe Holanda{" - "}
                     <a class="text-white" href="https://mdbootstrap.com/">
                         <strong>Project Raster</strong>
                     </a>
