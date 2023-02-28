@@ -12,9 +12,15 @@ import Bag from "../img/Bag.png";
 import Chat from "../img/Chat.png";
 import Play from "../img/Play.png";
 
-import Phones from "../img/Phones.png";
+import Phones from "../img/Phone.png";
 
 import Brasil from "../countries/brasil.png";
+
+import { faAppStore } from "@fortawesome/free-brands-svg-icons";
+import { faGooglePlay } from "@fortawesome/free-brands-svg-icons";
+
+import Appstore from "../img/Appstore.svg";
+import Googleplay from "../img/Googleplay.svg";
 
 import Swal from 'sweetalert2';
 
@@ -200,10 +206,91 @@ const Home = () => {
                         <h6 className="text-white Robot">A revolução em rastreamento de suas encomendas<br></br>que chegou para melhorar a sua maneira de ver suas encomendas!<br></br>
                             A sua disposição em sua casa ou aonde voce estiver</h6>
                     </div>
-                    <div className="col-12 col-md-4">
 
+                    <div className="col-12 col-md-4">
                         <div class="icon">
                             <img src={Phones} class="Phones" alt="Phones" />
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <footer class="bg-dark text-white text-center text-lg-start">
+
+                <div class="container p-4">
+
+                    <div class="row d-flex justify-content-center">
+
+                        <img src={Logo} class="Logigs" alt="Logo" className="w-25 rounded-circle mx-auto d-block" />
+
+                        <div class="col-lg-3 col-md-12 mb-4 mb-md-0 ">
+                            <h5 class="text-uppercase text-left">Suporte</h5>
+
+                            <h6 className="text-left">
+                                suporte@Raster.com.br
+                                Atendimento das 9h às 18h
+                                (dias úteis)
+                            </h6>
+
+                            <div className="mt-4 mb-2 rounded" style={{ borderTop: "2px solid #fff ", marginLeft: 10, marginRight: 10 }}></div>
+
+                            <h5 class="text-uppercase pt-3 text-left">Fale Conosco</h5>
+
+                            <h6 className="text-left">
+                                suporte@Raster.com.br
+                                Atendimento das 9h às 18h
+                                (dias úteis)
+                            </h6>
+                        </div>
+
+
+                        <div class="col-lg-2 col-md-6 mb-4 mb-md-0 ">
+                            <h5 class="text-uppercase text-left">RASTER</h5>
+
+                            <ul class="list-unstyled mb-0">
+                                <li className="text-left">
+                                    <a href="#!" class="text-white text-left" className="lin">Trabalhe Conosco</a>
+                                </li>
+                                <li className="text-left">
+                                    <a href="#!" class="text-white text-left" className="lin">Entre em Contato</a>
+                                </li>
+
+                                <div className="pt-2" style={{ borderTop: "2px solid #fff ", marginLeft: 10, marginRight: 10, marginTop: 30 }}></div>
+
+                                <h5 class="text-uppercase pt-3 text-left" className="lin">Políticas</h5>
+
+                                <li className="text-left">
+                                    <a href="#!" class="text-white text-left" className="lin">Contrato Raster</a>
+                                </li>
+                                <li className="text-left">
+                                    <a href="#!" class="text-white text-left" className="lin">Política de Privacidade</a>
+                                </li>
+                                <li className="text-left">
+                                    <a href="#!" class="text-white" className="lin">Licensa MIT</a>
+                                </li>
+                                <li className="text-left">
+                                    <a href="#!" class="text-white" className="lin">Política de Cookies</a>
+                                </li>
+                            </ul>
+                        </div>
+
+
+
+                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                            <h5 class="text-uppercase mb-0 text-left">Baixe agora mesmo o nosso app ;)</h5>
+
+                            <ul class="list-unstyled">
+                                <li className="pt-4">
+                                    <img src={Appstore} alt="appstore" className="border rounded" />
+                                </li>
+                                <li className="pt-4">
+                                    <img src={Googleplay} alt="googleplay" className="border rounded" />
+                                </li>
+
+                            </ul>
                         </div>
 
                     </div>
@@ -211,29 +298,18 @@ const Home = () => {
                 </div>
 
 
-            </div>
 
-            <h3 className="d-flex p-2 justify-content-center" class="texFoo">A revolução já começou! Antecipe-se e saia na frente com os melhores rastreamentos</h3>
-
-            <footer id="rodape" className="d-flex justify-content-center bg-transparent">
-
-
-
-
-                <div class="text-center p-3 bgfor">
-                © 2023 | ∞ Criado por <span></span>Felipe Holanda{" - "}
-                    <a class="text-dark" href="https://mdbootstrap.com/">
+                <div class="text-center p-3">
+                    © 2023 | ∞ Criado por <span></span>Felipe Holanda{" - "}
+                    <a class="text-white" href="https://mdbootstrap.com/">
                         <strong>Project Raster</strong>
                     </a>
                 </div>
-                <p className="align-middle text-white">
-                    © 2023 | ∞ Criado por <span></span>Felipe Holanda{" - "}
-                    <a href="https://github.com/felipeholanda2077/Project_Raster">
-                        <strong>Project Raster</strong>
-                    </a>
-                </p>
+
             </footer>
-        </div >
+
+        </div>
+
 
     );
 
