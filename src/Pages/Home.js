@@ -217,7 +217,7 @@ const Home = () => {
 
 
 
-            <footer class="bg-dark text-white text-center text-lg-start">
+            <footer class="bg-foo text-white text-center text-lg-start">
 
                 <div class="container p-4">
 
