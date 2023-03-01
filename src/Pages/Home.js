@@ -16,7 +16,7 @@ import Chat from "../img/Chat.png";
 import About from "../img/Play.png";
 
 import Phones from "../img/Phone.png";
-import MacBook from "../img/MacBook.png";
+import MacBook from "../img/image1.jpeg";
 
 
 
