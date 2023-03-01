@@ -16,6 +16,7 @@ import Chat from "../img/Chat.png";
 import About from "../img/Play.png";
 
 import Phones from "../img/Phone.png";
+import MacBook from "../img/MacBook.png";
 
 
 
@@ -220,7 +221,7 @@ const Home = () => {
             <div className="container">
                 <div className="row align-items-center">
                     <div className="col-12 col-md-6">
-                        <img src={Phones} class="Phones" alt="Phones" />
+                        <img src={MacBook} class="Phones" alt="Phones" />
                     </div>
                     <div className="col-12 col-md-5">
                         <h1 className="texPho" >Voce muda<br></br>Para o super App</h1>
